@@ -1,7 +1,11 @@
+.main {
+  padding-bottom: 100px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 480px repeat(5, 245px);
+  grid-template-rows: 480px repeat(4, 245px);
   grid-auto-rows: minmax(245px, 1fr);
   gap: 60px;
 }
@@ -223,7 +227,7 @@
 @media (max-width: 1780px) {
 
   .grid {
-    grid-template-rows: 400px repeat(5, 245px);
+    grid-template-rows: 400px repeat(4, 245px);
     gap: 40px;
   }
 
@@ -382,7 +386,7 @@
 @media (max-width: 1040px) {
   .grid {
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 280px repeat(8, 140px);
+    grid-template-rows: 280px repeat(6, 140px);
     grid-auto-rows: minmax(245px, 1fr);
     gap: 20px;
   }
@@ -584,6 +588,7 @@
 
   .grid__item:nth-child(8) {
     padding: 183px 15px 10px 10px;
+    align-self: start;
   }
 
   .grid__item:nth-child(8) .grid__item-text {
@@ -607,7 +612,7 @@
 @media (max-width: 580px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 340px repeat(9, 130px);
+    grid-template-rows: 340px repeat(7, 130px);
     grid-auto-rows: minmax(245px, 1fr);
   }
 

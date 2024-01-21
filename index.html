@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopOnline Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,10 +16,135 @@
 
   <header class="header">
 
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="header__logo" src="images/logo.png" alt="логотип">
+
+        <button class="header__menu-btn" type="button">Меню</button>
+
+        <form class="header__search-form" method="get" action="#">
+          <input class="header__search-input" type="text" name="search" placeholder="Я ищу...">
+          <button class="header__search-btn" type="button"></button>
+        </form>
+
+        <div class="header__profile">
+
+          <a href="#" class="header__profile-item">
+            <img class="header__profile-img" src="images/icons/person.svg" alt="иконка человек">
+            <span class="header__profile-text">Профиль</span>
+          </a>
+
+          <a href="#" class="header__profile-item">
+            <img class="header__profile-img" src="images/icons/cart.svg" alt="иконка тележка">
+            <span class="header__profile-count">2</span>
+            <span class="header__profile-text">Корзина</span>
+          </a>
+
+          <a href="#" class="header__profile-item">
+            <img class="header__profile-img" src="images/icons/favorite.svg" alt="иконка сердце">
+            <span class="header__profile-text">Избранное</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
   </header>
 
   <main class="main">
 
+    <div class="container">
+
+      <ul class="grid">
+
+        <li class="grid__item">
+          <p class="grid__item-text grid__item-text_paragraph_first">-50% на все ноутбуки</p>
+          <p class="grid__item-text grid__item-text_paragraph_second">
+            До конца акции:
+          </p>
+
+          <div class="grid__item-text grid__item-text_paragraph_third">
+
+            <p class="grid__time-paragraph">
+              <span class="grid__time">3</span> дня
+            </p>
+
+            <p class="grid__time-paragraph">
+              <span class="grid__time">8</span> часов
+            </p>
+
+            <p class="grid__time-paragraph">
+              <span class="grid__time">43</span> минуты
+            </p>
+          </div>
+
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">
+            <span class="grid__item-span">Книга</span> – лучший подарок
+          </p>
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">Время скидок!</p>
+          <span class="grid__item-discount">
+            -25%
+          </span>
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">
+            Вторая пара кроссовок
+            <span class="grid__item-span">в подарок!</span>
+          </p>
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">Идеи новогодних
+            подарков</p>
+        </li>
+
+        <li class="grid__item">
+          <span class="grid__item-discount">
+            -40%
+          </span>
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">
+            Выгодно в декабре!
+          </p>
+          <span class="grid__item-discount">
+            -15%
+          </span>
+        </li>
+
+        <li class="grid__item">
+          <p class="grid__item-text">
+            Новогодние украшения
+          </p>
+        </li>
+
+        <li class="grid__item">
+          <span class="grid__item-discount">
+            -15%
+          </span>
+        </li>
+
+        <li class="grid__item">
+          <span class="grid__item-discount">
+            -15%
+          </span>
+          <p class="grid__item-text">
+            На бытовую химию
+          </p>
+        </li>
+
+        <li class="grid__item"></li>
+
+      </ul>
+
+    </div>
 
   </main>
 

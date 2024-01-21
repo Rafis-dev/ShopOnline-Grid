@@ -10,10 +10,10 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  color: var(--main-color)
+  color: #fff;
 }
 
 img {
@@ -74,52 +74,12 @@ ul {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1780px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.section {
-  padding: 70px 0;
-}
 
-.section__title {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: normal;
-}
+@media (max-width: 1024px) {}
 
-.section__subtitle {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: normal;
-}
-
-@media (max-width: 1024px) {
-
-  .container {
-    max-width: 994px;
-  }
-
-  .section__title {
-    font-size: 32px
-  }
-
-  .section__subtitle {
-    font-size: 22px;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .section__title {
-    font-size: 20px
-  }
-
-  .section__subtitle {
-    font-size: 16px;
-  }
-
-}
+@media (max-width: 580px) {}

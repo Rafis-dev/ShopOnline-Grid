@@ -5,14 +5,19 @@
 
 .header__wrapper {
   display: grid;
-  grid-template-columns: 2fr 2fr 6fr 2fr;
-  grid-auto-rows: 1fr;
+  grid-template-columns: 2fr 2fr 5fr 3fr;
+  grid-template-areas:
+    "logo menu-btn search profile";
   align-items: center;
   gap: 60px 34px;
 }
 
+.header__logo {
+  grid-area: logo;
+}
 
 .header__menu-btn {
+  grid-area: menu-btn;
   border-radius: 10px;
   background: #3670C7;
   color: inherit;
@@ -31,9 +36,11 @@
   width: 24px;
   height: 24px;
   background: url("../images/icons/btn-lines.png");
+  background-size: cover;
 }
 
 .header__search-form {
+  grid-area: search;
   max-width: 757px;
   position: relative;
 }
@@ -70,6 +77,7 @@
 }
 
 .header__profile {
+  grid-area: profile;
   display: flex;
   align-items: center;
   gap: 70px;
@@ -117,21 +125,13 @@
     padding-bottom: 60px;
   }
 
-  .header__logo {
-    grid-column: span 2;
-  }
-
-  .header__menu-btn {
-    grid-row: 2 / 3;
-  }
-
-  .header__profile {
-    grid-column: 4 / 5;
+  .header__wrapper {
+    grid-template-areas:
+      "logo . . profile"
+      "menu-btn search search search";
   }
 
   .header__search-form {
-    grid-row: 2 / 3;
-    grid-column: 2 / -1;
     max-width: 100%;
   }
 }
@@ -188,13 +188,15 @@
   .header__wrapper {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    grid-template-areas:
+      "logo logo"
+      "menu-btn profile"
+      "search search";
   }
 
 
   .header__profile {
     gap: 20px;
-    grid-row: 2 / 3;
-    grid-column: 3 / 5;
     align-self: center;
   }
 
@@ -210,13 +212,12 @@
     font-size: 12px;
     padding: 5px 15px 5px 15px;
     justify-self: start;
-    align-self: center;
     gap: 2px;
   }
 
-  .header__search-form {
-    grid-column: 1 / 5;
-    grid-row: 3 / 4;
+  .header__menu-btn::before {
+    width: 14px;
+    height: 14px;
   }
 
   .header__search-input {
